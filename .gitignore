@@ -1,0 +1,12 @@
+# Setting file disable
+.settings
+# Disable all ikea
+.idea
+.DS_Store
+# Disable classPath eclipse
+.classpath
+.project
+# Disable all compiled repos
+
+#All target disable
+target
