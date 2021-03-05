@@ -1,4 +1,4 @@
-##Camel + Spring + SOAP Transformation using a REST Facade
+## Camel + Spring + SOAP Transformation using a REST Facade
 <br>
 The project uses maven as a tool for building our project.
 <br>
