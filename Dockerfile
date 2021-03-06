@@ -1,7 +1,7 @@
 # Using the smallest image there is
 FROM openjdk:8-jdk-alpine
 # Exposing a port for application
-EXPOSE 8081
+EXPOSE 8080
 # Adding a jar_file as a target dep.
 ARG JAR_FILE=target/neftrest-1.0.0.jar
 # JAR file for executions

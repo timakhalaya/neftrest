@@ -12,6 +12,5 @@ public class RestDslApplication {
 
   public static void main(String[] args) {
      ConfigurableApplicationContext dm = SpringApplication.run(RestDslApplication.class, args);
-
   }
 }
