@@ -9,12 +9,12 @@ The project uses maven as a tool for building our project.
 The whole project is packed into a Docker container --> look into Docker file for specification!
 
 <hr>
-## Security Aspects of Application
+<h4>Security Aspects of Application</h4>
 <br>
 1) We can use either baseAuth using a user/name pass in application.properties mapped from Secrets Manager <br>
 2) JWT using a jwt library for the token validation - > prod set should have an authorization server deployed as a standalone. <br><br>
-## Running SSO on minishift
-<br>
+<h4>Running SSO on minishift</h4>
+
 Running as admin on mini<br>
 1) Once the minishift installed run <b>minishift ssh </b><br>
 2) <b>sudo su -</b> <br>
