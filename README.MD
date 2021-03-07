@@ -28,3 +28,15 @@ Running as admin on mini<br>
 9) <b>oc login -u admin -p admin</b><br>
 <i>Check if you are the admin</i><br>
 10) <b>oc whoami</b><br>
+<b>https://github.com/jannikhuels/minishift-redhatsso</b> Contains files needed to run  SSO on minishift<br>
+<b>oc get route sso -o jsonpath='http://{.spec.host}/auth/admin/'</b> will return SSO admin panel url on minishift
+
+
+<h4>AMQ Artemis for minishift</h4>
+Installation steps can be found at <b>https://github.com/amq-io/hello-world-jms-openshift</b> <br>
+After you run installation make sure to create a dir - > sudo touch /etc/resolver/nip.io<br>
+Then you have to add an entry with a minishift IP - > nameserver 192.168.99.100 <br>
+http://<sender-host>/api/send <br>
+http://<receiver-host>/api/receive <br>
+
+
