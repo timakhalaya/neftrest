@@ -29,7 +29,9 @@ Running as admin on mini<br>
 <i>Check if you are the admin</i><br>
 10) <b>oc whoami</b><br>
 <b>https://github.com/jannikhuels/minishift-redhatsso</b> Contains files needed to run  SSO on minishift<br>
-<b>oc get route sso -o jsonpath='http://{.spec.host}/auth/admin/'</b> will return SSO admin panel url on minishift
+<b>oc get route sso -o jsonpath='http://{.spec.host}/auth/admin/'</b> will return SSO admin panel url on minishift<br>
+Make sure to have a DNS started as well => minishift config set local-proxy true and  minishift dns start <br>
+
 
 
 <h4>AMQ Artemis for minishift</h4>
