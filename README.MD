@@ -39,4 +39,12 @@ Then you have to add an entry with a minishift IP - > nameserver 192.168.99.100 
 http://<sender-host>/api/send <br>
 http://<receiver-host>/api/receive <br>
 
+<h4>VirtualBox installation </h4>
+For those suffering on MAC OS <br>
+Do the <b>recovery mode restart </b>, on restart press CMD + R<br>
+Open terminal and add a consent for Oracle<br>
+<b>spctl kext-consent add VB5E2TV963</b><br>
+Reboot.<br>
+The installation will finally work.
+
 
