@@ -33,13 +33,13 @@ Running as admin on mini<br>
 Make sure to have a DNS started as well => minishift config set local-proxy true and  minishift dns start <br><br>
 The url for access endpoints will visible in the admin console : <b>exmp = > http://sso-sso-poc.192.168.99.100.nip.io/auth/realms/{realms}/.well-known/openid-configuration</b><br>
 In order to obtain a token send a request to : http://sso-sso-poc.192.168.99.100.nip.io/auth/realms/{realm}/protocol/openid-connect/token <br>
-curl -X POST 'http://localhost:8080/auth/realms/{realms}/protocol/openid-connect/token' \<br>
- --header 'Content-Type: application/x-www-form-urlencoded' \<br>
- --data-urlencode 'grant_type=password' \<br>
- --data-urlencode 'client_id=springboot-microservice' \ <br>
- --data-urlencode 'client_secret=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx' \<br>
- --data-urlencode 'username=employee1' \<br>
- --data-urlencode 'password=mypassword' <br>
+*curl -X POST 'http://localhost:8080/auth/realms/{realms}/protocol/openid-connect/token' \
+ --header 'Content-Type: application/x-www-form-urlencoded' \
+ --data-urlencode 'grant_type=password' \
+ --data-urlencode 'client_id=springboot-microservice' \
+ --data-urlencode 'client_secret=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx' \
+ --data-urlencode 'username=employee1' \
+ --data-urlencode 'password=mypassword' *
 
 
 
