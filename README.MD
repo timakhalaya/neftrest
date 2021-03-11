@@ -33,6 +33,7 @@ Running as admin on mini<br>
 Make sure to have a DNS started as well => minishift config set local-proxy true and  minishift dns start <br><br>
 The url for access endpoints will visible in the admin console : <b>exmp = > http://sso-sso-poc.192.168.99.100.nip.io/auth/realms/{realms}/.well-known/openid-configuration</b><br>
 In order to obtain a token send a request to : http://sso-sso-poc.192.168.99.100.nip.io/auth/realms/{realm}/protocol/openid-connect/token <br>
+```
 curl -X POST 'http://localhost:8080/auth/realms/{realms}/protocol/openid-connect/token' \
  --header 'Content-Type: application/x-www-form-urlencoded' \
  --data-urlencode 'grant_type=password' \
@@ -40,6 +41,7 @@ curl -X POST 'http://localhost:8080/auth/realms/{realms}/protocol/openid-connect
  --data-urlencode 'client_secret=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx' \
  --data-urlencode 'username=employee1' \
  --data-urlencode 'password=mypassword'
+```
 
 
 
@@ -48,8 +50,10 @@ curl -X POST 'http://localhost:8080/auth/realms/{realms}/protocol/openid-connect
 Installation steps can be found at <b>https://github.com/amq-io/hello-world-jms-openshift</b> <br>
 After you run installation make sure to create a dir - > sudo touch /etc/resolver/nip.io<br>
 Then you have to add an entry with a minishift IP - > nameserver 192.168.99.100 <br>
+```
 http://<sender-host>/api/send <br>
 http://<receiver-host>/api/receive <br>
+```
 
 <h4>VirtualBox installation </h4>
 For those suffering on MAC OS <br>
