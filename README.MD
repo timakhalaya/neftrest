@@ -47,10 +47,10 @@ curl -X POST 'http://localhost:8080/auth/realms/{realms}/protocol/openid-connect
 Installation steps can be found at <b>https://github.com/amq-io/hello-world-jms-openshift</b> <br>
 After you run installation make sure to create a dir - > sudo touch /etc/resolver/nip.io<br>
 Then you have to add an entry with a minishift IP - > nameserver 192.168.99.100 <br>
-```
-http://<sender-host>/api/send
-http://<receiver-host>/api/receive
-```
+
+http://<sender-host>/api/send <br>
+http://<receiver-host>/api/receive <br>
+
 
 <h4>VirtualBox installation </h4>
 For those suffering on MAC OS <br>
