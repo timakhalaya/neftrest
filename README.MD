@@ -43,16 +43,13 @@ curl -X POST 'http://localhost:8080/auth/realms/{realms}/protocol/openid-connect
  --data-urlencode 'password=mypassword'
 ```
 
-
-
-
 <h4>AMQ Artemis for minishift</h4>
 Installation steps can be found at <b>https://github.com/amq-io/hello-world-jms-openshift</b> <br>
 After you run installation make sure to create a dir - > sudo touch /etc/resolver/nip.io<br>
 Then you have to add an entry with a minishift IP - > nameserver 192.168.99.100 <br>
 ```
-http://<sender-host>/api/send <br>
-http://<receiver-host>/api/receive <br>
+http://<sender-host>/api/send
+http://<receiver-host>/api/receive
 ```
 
 <h4>VirtualBox installation </h4>
