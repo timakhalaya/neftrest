@@ -42,7 +42,8 @@ curl -X POST 'http://localhost:8080/auth/realms/{realms}/protocol/openid-connect
  --data-urlencode 'username=employee1' \
  --data-urlencode 'password=mypassword'
 ```
-
+<b> MAKE SURE TO CHECK THE CONFIGURATATION FOR TIMEZONE ON THE SSO SERVER , OTHERWISE WILL ALWAYS RESULT TO 401 </b><br>
+<b>For DNS configuration refer to https://docs.okd.io/3.11/minishift/using/experimental-features.html</b>
 <h4>AMQ Artemis for minishift</h4>
 Installation steps can be found at <b>https://github.com/amq-io/hello-world-jms-openshift</b> <br>
 After you run installation make sure to create a dir - > sudo touch /etc/resolver/nip.io<br>

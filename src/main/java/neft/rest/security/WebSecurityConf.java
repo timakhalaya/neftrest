@@ -17,7 +17,9 @@ import org.springframework.security.web.authentication.session.RegisterSessionAu
 import org.springframework.security.web.authentication.session.SessionAuthenticationStrategy;
 
 @Configuration
-@EnableWebSecurity
+//debug = true below if we want to debug the SpringSecurity
+//@EnableWebSecurity(debug = true)
+@EnableWebSecurity()
 @EnableGlobalMethodSecurity(jsr250Enabled = true)
 public class WebSecurityConf extends KeycloakWebSecurityConfigurerAdapter {
 
