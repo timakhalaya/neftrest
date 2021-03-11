@@ -30,7 +30,17 @@ Running as admin on mini<br>
 10) <b>oc whoami</b><br>
 <b>https://github.com/jannikhuels/minishift-redhatsso</b> Contains files needed to run  SSO on minishift<br>
 <b>oc get route sso -o jsonpath='http://{.spec.host}/auth/admin/'</b> will return SSO admin panel url on minishift<br>
-Make sure to have a DNS started as well => minishift config set local-proxy true and  minishift dns start <br>
+Make sure to have a DNS started as well => minishift config set local-proxy true and  minishift dns start <br><br>
+The url for access endpoints will visible in the admin console : <b>exmp = > http://sso-sso-poc.192.168.99.100.nip.io/auth/realms/{realms}/.well-known/openid-configuration</b><br>
+In order to obtain a token send a request to : http://sso-sso-poc.192.168.99.100.nip.io/auth/realms/{realm}/protocol/openid-connect/token <br>
+curl -X POST 'http://localhost:8080/auth/realms/{realms}/protocol/openid-connect/token' \<br>
+ --header 'Content-Type: application/x-www-form-urlencoded' \<br>
+ --data-urlencode 'grant_type=password' \<br>
+ --data-urlencode 'client_id=springboot-microservice' \ <br>
+ --data-urlencode 'client_secret=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxx' \<br>
+ --data-urlencode 'username=employee1' \<br>
+ --data-urlencode 'password=mypassword' <br>
+
 
 
 
@@ -47,6 +57,7 @@ Do the <b>recovery mode restart </b>, on restart press CMD + R<br>
 Open terminal and add a consent for Oracle<br>
 <b>spctl kext-consent add VB5E2TV963</b><br>
 Reboot.<br>
-The installation will finally work.
+The installation will finally work.<br><br>
+
 
 
